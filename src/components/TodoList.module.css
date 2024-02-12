@@ -32,7 +32,8 @@ main {
 .taskQuantity {
   background-color: var(--gray-400);
   color: #FFF;
-  border-radius: 100%;
+  border-radius: .5rem;
+  height: 1.188rem;
   font-size: .75rem;
   font-weight: 700;
   padding: .125rem .5rem;

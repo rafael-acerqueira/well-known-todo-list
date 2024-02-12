@@ -9,6 +9,8 @@
   grid-template-columns: 1fr 10fr 1fr;
   align-items: start;
   justify-items: center;
+
+  margin-bottom: 0.75rem;
 }
 
 .wrapper input[type='checkbox'] {
@@ -76,6 +78,11 @@
   color: var(--gray-100);
   font-size: 0.875rem;
   line-height: 140%;
+}
+
+.taskText.done {
+  color: var(--gray-300);
+  text-decoration: line-through;
 }
 
 .deleteButton {
