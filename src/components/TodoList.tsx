@@ -1,12 +1,12 @@
 import { ClipboardText } from 'phosphor-react'
 import styles from './TodoList.module.css'
-import { Task, TaskProps } from './Task'
+import { Task, ITask } from './Task'
 
 
 interface TodoList {
-  tasks: Array<TaskProps>,
-  deleteTask: (id: number) => void,
-  doneTask: (id: number) => void
+  tasks: Array<ITask>,
+  deleteTask: (id: string) => void,
+  doneTask: (id: string) => void
 }
 
 export function TodoList({ tasks, deleteTask, doneTask }: TodoList) {

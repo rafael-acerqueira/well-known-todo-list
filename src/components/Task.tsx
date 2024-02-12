@@ -1,12 +1,16 @@
 import { Check, Trash } from 'phosphor-react'
 import styles from './Task.module.css'
 
-export interface TaskProps {
-  id: number,
+
+export interface ITask {
+  id: string,
   text: string,
   done: boolean,
-  deleteTask: (id: number) => void,
-  doneTask: (id: number) => void,
+}
+
+export interface TaskProps extends ITask {
+  deleteTask: (id: string) => void,
+  doneTask: (id: string) => void,
 }
 
 export function Task({ id, text, done, deleteTask, doneTask }:TaskProps) {
